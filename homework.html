@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册会员</title>
+</head>
+<body>
+  <div class="container">
+  <h1 style="color:blue ;margin:auto">欢迎注册会员</h1>
+
+  <div>
+    <label for="telephong" class="place" >手机号码：</label>
+    <input id="telephong" type="tel" placeholder="11位手机号">
+    <a style="color:red">必填 </a>
+  </div>
+
+  <div>
+    <label for="password" class="place" >创建密码：</label>
+    <input id="password" type="password" placeholder="8位密码">
+    <a style="color:red">必填 </a>
+  </div>
+
+  <div>
+    <label for="emile" class="place" >注册邮箱：</label>
+    <input id="emile" type="email" placeholder="例如wustzz@sina.com">
+    <a style="color:red">必填 </a>
+  </div>
+
+  <div>
+    <label for="yzm" class="place" >验证码：</label>
+    <input id="yzm" type="text">
+  </div>
+
+  <div>
+    <label for="男" class="place" >性别：</label>
+    <input type="radio" id="男" value="male" name="gender">
+    <label for="男">男</label>
+    <input type="radio" id="女" value="female" name="gender">
+    <label for="女">女</label>
+  </div>
+
+  <div>
+    <label for="birth" class="place" >生日：</label>
+    <input id="birth" type="month">
+  </div>
+
+  <div>
+    <label for="age" class="place" >年龄：</label>
+    <input id="age" type="text">
+  </div>
+
+  <div>
+    <label for="province" class="place" >籍贯：</label>
+      <select id="province">
+       <option value="-1">请选择</option>
+      </select>
+      <select id="city"></select>
+  </div>
+
+  <div>
+    <label for="edu" class="place" >个人学历：</label>
+    <select name="edu" id="edu" type="required">
+      <option value="Bs">博士</option>
+      <option value="Ss">硕士</option>
+      <option value="Bk">本科</option>
+      <option value="Zk">专科</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="money" class="place" >月薪：</label>
+    <input type="range" id="money" min="1000" max="20000" step="100">
+  </div>
+
+  <div>
+    <label for="sing" class="place" >个人爱好：</label>
+    <input type="checkbox" id="sing" value="sing">
+    <label for="sing">唱歌</label>
+    <input type="checkbox" id="run" value="run">
+    <label for="run">跑步</label>
+    <input type="checkbox" id="swim" value="swim">
+    <label for="swim">游泳</label>
+  </div>
+
+  <div>
+    <label for="fileInput" class="place" >个人照片：</label>
+    <input type="file" id="fileInput" value="photo" accept="image/*" />
+    <div class="avatar-container">
+      <img id="avatar" src="#" alt="头像预览" />
+    </div>
+  </div>
+</div>
+  <style>
+  .container{
+      margin: 0 auto;
+      width:500px;
+    }
+  .place{
+    display: inline-block; 
+    width:100px;
+    padding: 10px;
+    text-align: right;
+  }
+  .avatar-container {
+      width: 200px;
+      height: 200px;
+      border:  black solid 2px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 10px auto;
+    }
+  #avatar{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+<script src="choice.js"></script>
+</body>
+</html>
